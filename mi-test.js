@@ -1,36 +1,39 @@
-function esPrimo(num) {
-    // Retornar true si "num" es primo.
-    // De lo contrario retorna false.
-    // [Pista 1]: un número primo sólo es divisible por sí mismo y por 1.
-    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
-    // [Nota]: los números negativos, 0 y 1 NO son números primos.
-    // Tu código:
-    if (num<0)
-    return false;
-    else 
-       for (var i = 2; i < num; i++) 
-         if (num% i === 0) 
-           return false;
-         
-     
-       
-     
-       return (num !== 1 && num !== 0);
-     }
 
-//for (var e = -1; e <= 10; e++) 
- //  console.log(e+" "+esPrimo(e));
 
-   function doWhile(num) {
-    // Implementar una función que aumente el valor recibido en 5 hasta un límite de 8 veces.
-    // Retornar el valor final.
-    // Utilizar el bucle Do-While.
-    // Tu código:
-    let i=0;
-    do {
-       i = i + 1;
-       num = num + 5;
-     } while (i <= 7);
-     return num;}
+//    function agregarItemAlFinalDelArray(array, elemento) {
+//     // Agrega el "elemento" al final del arreglo recibido.
+//     // Retorna el arreglo.
+//     // Tu código
 
-     console.log(doWhile(0));
+//     return array.push(elemento);
+//  }
+//console.log(agregarItemAlFinalDelArray([1,1,1,1],3));
+
+//   function incrementarPorUno(array) {
+//     // El arreglo recibido por parámetro contiene números.
+//     // Retornar un arreglo con los elementos incrementados en +1.
+//     // Tu código:
+//  //   let arreglo=[];
+//    //    for(i=0; i<array.length; i++)
+//      //  arreglo.push( ++array[i]);
+
+//        arreglo=array.map((num) => {return num + 1;});
+//        return arreglo;
+
+//  }
+//  console.log(incrementarPorUno([1,1]));
+
+function dePalabrasAFrase(palabras) {
+  // El argumento "palabras" es un arreglo de strings.
+  // Retornar un string donde todas las palabras estén concatenadas
+  // con un espacio entre cada palabra.
+  // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
+  
+  // Tu código
+  arreglo=array.map((num) => {return num + 1;});
+  let  pala=['Hello', 'world!'];
+  var buffer=pala.split('');
+  
+  return buffer;
+}
+console.log(dePalabrasAFrase  ('Hello'));
