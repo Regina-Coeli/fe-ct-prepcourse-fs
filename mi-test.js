@@ -30,10 +30,6 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
   
   // Tu código
-  arreglo=array.map((num) => {return num + 1;});
-  let  pala=['Hello', 'world!'];
-  var buffer=pala.split('');
-  
-  return buffer;
+  return palabras.join(' ');
 }
-console.log(dePalabrasAFrase  ('Hello'));
+console.log(dePalabrasAFrase  (['Hello', 'world!']));
