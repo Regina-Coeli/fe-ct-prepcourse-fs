@@ -58,15 +58,34 @@
 
 
 // 
-function tienenMismaLongitud(str1, str2) {
-  // Retorna true si los dos strings tienen la misma longitud.
-  // De lo contrario, retorna false.
-  // Tu código:
-  var a=str1.length;
-  var b=str2.length;
-  if (str1.length == str2.length)
-  return true;
-  else return false;
+// function tienenMismaLongitud(str1, str2) {
+//   // Retorna true si los dos strings tienen la misma longitud.
+//   // De lo contrario, retorna false.
+//   // Tu código:
+//   if (str1.length == str2.length)
+//   return true;
+//   else return false;
   
+// }
+// console.log(tienenMismaLongitud("hola","hol"));
+function agregarMetodoCalculoDescuento(objetoProducto) {
+  // Agrega una propiedad al "objetoProducto" con el nombre "calcularPrecioDescuento".
+  // Esta propiedad debe ser una función que multiplique el precio del producto por el porcentajeDeDescuento.
+  // El "objetoProducto" posee una propiedad "precio" y una propiedad "porcentajeDeDescuento".
+  // Luego debes restar del precio total del producto ese valor de descuento.
+  // Retornar el precio final.
+  // Ejemplo:
+  // Precio ---> 10
+  // PorcentajeDeDescuento ---> 0.2
+  // Precio final ---> 8
+  // Tu código:
+  objetoProducto.calcularPrecioDescuento = function(){let precioFinal = this.precio - (this.precio * this.porcentajeDeDescuento);
+     return precioFinal;};
+  
+     return objetoProducto.calcularPrecioDescuento();
 }
-console.log(tienenMismaLongitud("hola","hol"));
+let objeto={precio:1000,porcentajeDeDescuento:0.2};
+console.log(agregarMetodoCalculoDescuento(objeto));
+console.log(objeto.calcularPrecioDescuento());
+
+
