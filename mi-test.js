@@ -82,9 +82,20 @@
 //   objetoProducto.calcularPrecioDescuento = function (){return this.precio - (this.precio * this.porcentajeDeDescuento);}
 //     return objetoProducto;
 // }
-// let objeto={precio:100,porcentajeDeDescuento:0.2};
+//let objeto={precio:100,porcentajeDeDescuento:0.2};
 // console.log(agregarMetodoCalculoDescuento(objeto));
 // console.log(objeto.calcularPrecioDescuento());
-
-
+let objeto = new Object();
+objeto={name:"lola",age: 30};
+function deObjetoAarray(objeto) {
+    // Recibes un objeto. Tendrás que crear un arreglo de arreglos.
+    // Cada elemento del arreglo padre será un nuevo arreglo que contendrá dos elementos.
+    // Estos elementos debe ser cada par clave:valor del objeto recibido.
+    // [EJEMPLO]: {D: 1, B: 2, C: 3} ---> [['D', 1], ['B', 2], ['C', 3]].
+    // Tu código:
+    var arreglo=[];
+    for(var prop in objeto){arreglo.push([prop,objeto[prop]])}
+    return arreglo;
+ }
+ console.log(deObjetoAarray(objeto));
 
